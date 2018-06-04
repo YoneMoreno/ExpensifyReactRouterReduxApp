@@ -1,5 +1,5 @@
 /node_modules/
-.idea/
-bundle.js
+/.idea/
+/public/bundle.js
 
 
