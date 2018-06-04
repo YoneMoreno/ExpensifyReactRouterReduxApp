@@ -9,10 +9,18 @@ const ExpensesDashboardPage = () => (
         This is our new dashboard component ;=)!
     </div>
 );
+const AddExpensePage = () => (
+    <div>
+        This is our new add expenses ! component.
+    </div>
+);
 
 const routes = (
     <BrowserRouter>
-        <Route path='/' component={ExpensesDashboardPage}/>
+        <div>
+            <Route path='/' component={ExpensesDashboardPage} exact={true}/>
+            <Route path='/create' component={AddExpensePage}/>
+        </div>
     </BrowserRouter>
 );
 
