@@ -17,31 +17,39 @@ const AddExpensePage = () => (
 
 const EditExpensePage = () => (
     <div>
-        <h1>This is the Edit Expenses page, enjoy!</h1>
+        This is the Edit Expenses page, enjoy!
     </div>
 );
 const HelpPage = () => (
     <div>
-        <h1>Help Page on duty!</h1>
+        Help Page on duty!
     </div>
 );
 const NotFoundPage = () => (
     <div>
-        <h1>404!</h1>
+        404!
         <Link to='/'>Go home</Link>
     </div>
+);
+const Header = () => (
+    <header>
+        <h1>Expensify</h1>
+    </header>
 );
 
 
 const routes = (
     <BrowserRouter>
-        <Switch>
-            <Route path='/' component={ExpensesDashboardPage} exact={true}/>
-            <Route path='/create' component={AddExpensePage}/>
-            <Route path='/edit' component={EditExpensePage}/>
-            <Route path='/help' component={HelpPage}/>
-            <Route component={NotFoundPage}/>
-        </Switch>
+        <div>
+            <Header/>
+            <Switch>
+                <Route path='/' component={ExpensesDashboardPage} exact={true}/>
+                <Route path='/create' component={AddExpensePage}/>
+                <Route path='/edit' component={EditExpensePage}/>
+                <Route path='/help' component={HelpPage}/>
+                <Route component={NotFoundPage}/>
+            </Switch>
+        </div>
     </BrowserRouter>
 );
 
