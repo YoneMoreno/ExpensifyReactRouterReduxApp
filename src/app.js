@@ -32,8 +32,8 @@ const routes = (
         <div>
             <Route path='/' component={ExpensesDashboardPage} exact={true}/>
             <Route path='/create' component={AddExpensePage}/>
-            <Route path='/EditExpensePage' component={EditExpensePage}/>
-            <Route path='/HelpPage' component={HelpPage}/>
+            <Route path='/edit' component={EditExpensePage}/>
+            <Route path='/help' component={HelpPage}/>
         </div>
     </BrowserRouter>
 );
